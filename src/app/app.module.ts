@@ -12,8 +12,7 @@ import { AppComponent } from './app.component';
 import { ConfigService } from './services';
 
 const BASE_ROUTES: Routes = [
-    { path: '', loadChildren: './pages/default/default.module#DefaultModule' },
-    { path: 'home', loadChildren: './pages/home/home.module#HomeModule' },
+    { path: '', loadChildren: './pages/home/home.module#HomeModule' },
     { path: '404', loadChildren: './pages/404/404.module#NotFoundModule' },
     { path: '**', redirectTo: '404' }
 ]
