@@ -52,6 +52,7 @@ $RECYCLE.BIN/
 
 # Node JS
 **/dist/*
+**/www/*
 **/node_modules/*
 **/wwwroot/*
 package-lock.json
