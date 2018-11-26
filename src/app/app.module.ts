@@ -10,6 +10,7 @@ import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { ConfigService } from './services';
+import { MaterialModule } from './shared';
 
 const BASE_ROUTES: Routes = [
     { path: '', loadChildren: './pages/home/home.module#HomeModule' },
@@ -27,6 +28,7 @@ const BASE_ROUTES: Routes = [
         HttpClientModule,
         BrowserModule,
         BrowserAnimationsModule,
+        MaterialModule,
         RouterModule.forRoot(BASE_ROUTES)
     ],
     exports: [ RouterModule ],
