@@ -14,6 +14,7 @@ import { MaterialModule } from './shared';
 
 const BASE_ROUTES: Routes = [
     { path: '', loadChildren: './pages/home/home.module#HomeModule' },
+    { path: 'about', loadChildren: './pages/about/about.module#AboutModule' },
     { path: '404', loadChildren: './pages/404/404.module#NotFoundModule' },
     { path: '**', redirectTo: '404' }
 ]
