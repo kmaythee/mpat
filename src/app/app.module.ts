@@ -13,8 +13,7 @@ import { ConfigService } from './services';
 import { MaterialModule } from './shared';
 
 const BASE_ROUTES: Routes = [
-    { path: '', loadChildren: './pages/home/home.module#HomeModule' },
-    { path: 'about', loadChildren: './pages/about/about.module#AboutModule' },
+    { path: '', loadChildren: './pages/main/main.module#MainModule' },
     { path: '404', loadChildren: './pages/404/404.module#NotFoundModule' },
     { path: '**', redirectTo: '404' }
 ]

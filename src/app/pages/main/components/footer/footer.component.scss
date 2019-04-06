@@ -1,0 +1,16 @@
+.mpat-footer {
+    .contact-info {
+        h2 {
+            position: absolute;
+        }
+        i {
+            display: block;
+            width: 100%;
+            word-wrap: unset;
+            margin-bottom: 8px;
+            a {
+                margin-left: 8px;
+            }
+        }
+    }
+}
