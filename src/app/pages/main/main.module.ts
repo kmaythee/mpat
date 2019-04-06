@@ -40,4 +40,4 @@ const CHILD_ROUTES: Routes = [{
         RegisterComponent
     ],
 })
-export class HomeModule { }
+export class MainModule { }
