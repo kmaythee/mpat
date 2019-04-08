@@ -1,0 +1,21 @@
+.mpat-home {
+    .bg-img {
+        height: 500px;
+        position: relative;
+        box-shadow: inset 0px 0px 40px 40px #fff;
+
+        background-image: url('../../../../../assets/image/bg-pharm.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cover-text {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+}
