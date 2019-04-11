@@ -9,6 +9,7 @@ import { HeaderComponent, FooterComponent } from './components';
 import { MainComponent } from './main.component';
 import {
     HomeComponent,
+    NewsComponent,
     AboutComponent,
     RegisterComponent
 } from './pages';
@@ -18,6 +19,7 @@ const CHILD_ROUTES: Routes = [{
     children: [
         { path: '', redirectTo: 'home' },
         { path: 'home', component: HomeComponent },
+        { path: 'news', component: NewsComponent },
         { path: 'about', component: AboutComponent },
         { path: 'register', component: RegisterComponent }
     ]
@@ -36,6 +38,7 @@ const CHILD_ROUTES: Routes = [{
         HeaderComponent,
         FooterComponent,
         HomeComponent,
+        NewsComponent,
         AboutComponent,
         RegisterComponent
     ],
