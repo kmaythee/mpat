@@ -2,41 +2,59 @@
     <div class="container">
         <img class="imgbox" src="../../../../../assets/image/committee.jpg" alt="committee">
 
-        <h4>วิสัยทัศน์</h4>
-        <div class="row">
-            <span>เป็นศูนย์รวมเภสัชกรการตลาดมุ่งมั่นเพื่อพัฒนา ส่งเสริม พิทักษ์ วิชาชีพเพื่อให้เกิดการยอมรับจากบุคลากรทางด้านสาธารณสุข และสังคม</span>
-        </div>
-
-        <h4>พันธกิจ</h4>
-        <div class="row">
-            <ul>
-                <li *ngFor="let item of mission">
-                    <span>{{ item }}</span>
-                </li>
-            </ul>
-        </div>
-
-        <h4>วัตถุประสงค์</h4>
-        <div class="row">
-            <ul>
-                <li *ngFor="let item of purpose">
-                    <span>{{ item }}</span>
-                </li>
-            </ul>
-        </div>
-
-        <h4>รายชื่อคณะกรรมการบริหาร</h4>
-        <div class="row">
-            <table style="width:100%">
-                <tr>
-                  <th>ชื่อ - นามสกุล</th>
-                  <th>ตำแหน่ง</th>
-                </tr>
-                <tr *ngFor="let item of committee">
-                  <td>{{ item.name }}</td>
-                  <td>{{ item.type }}</td> 
-                </tr>
-            </table>
-        </div>
+        <mat-accordion>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h5>วิสัยทัศน์</h5>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <span>เป็นศูนย์รวมเภสัชกรการตลาดมุ่งมั่นเพื่อพัฒนา ส่งเสริม พิทักษ์ วิชาชีพเพื่อให้เกิดการยอมรับจากบุคลากรทางด้านสาธารณสุข และสังคม</span>
+            </mat-expansion-panel>
+    
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h5>พันธกิจ</h5>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul>
+                    <li *ngFor="let item of mission">
+                        <span>{{ item }}</span>
+                    </li>
+                </ul>
+            </mat-expansion-panel>
+    
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h5>วัตถุประสงค์</h5>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul>
+                    <li *ngFor="let item of purpose">
+                        <span>{{ item }}</span>
+                    </li>
+                </ul>
+            </mat-expansion-panel>
+    
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h5>รายชื่อคณะกรรมการบริหาร</h5>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <table style="width:100%">
+                    <tr>
+                      <th>ชื่อ - นามสกุล</th>
+                      <th>ตำแหน่ง</th>
+                    </tr>
+                    <tr *ngFor="let item of committee">
+                      <td>{{ item.name }}</td>
+                      <td>{{ item.type }}</td> 
+                    </tr>
+                </table>
+            </mat-expansion-panel>
+        </mat-accordion>    
     </div>
 </div>

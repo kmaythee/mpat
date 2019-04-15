@@ -2,27 +2,21 @@
     "compilerOptions": {
         "baseUrl": "./src",
         "paths": {
-            "@app/*": [
-                "./app/*"
-            ]
+            "@app/*": ["./app/*"]
         },
         "outDir": "./www/out-tsc",
         "target": "es5",
-        "module": "es2015",
+        "module": "commonjs", //"es2015",
         "moduleResolution": "node",
         "declaration": false,
+        "sourceMap": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "sourceMap": true,
+        "noImplicitAny": false,
         "removeComments": true,
         "suppressImplicitAnyIndexErrors": true,
-        "lib": [
-            "es2016",
-            "dom"
-        ],
-        "typeRoots": [
-            "node_modules/@types"
-        ],
+        "lib": ["es2016", "dom"],
+        "typeRoots": ["node_modules/@types"],
         "types": [ ]
     },
     "angularCompilerOptions": {
@@ -32,10 +26,7 @@
     "awesomeTypescriptLoaderOptions": {
         "useWebpackText": true
     },
-    "exclude": [
-        "node_modules",
-        "www"
-    ],
+    "exclude": ["node_modules", "www"],
     "compileOnSave": false,
     "buildOnSave": false
 }

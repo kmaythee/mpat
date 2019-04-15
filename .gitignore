@@ -55,6 +55,7 @@ $RECYCLE.BIN/
 **/www/*
 **/node_modules/*
 **/wwwroot/*
+**/locale/*
 package-lock.json
 
 #####

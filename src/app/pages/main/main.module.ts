@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import { MaterialModule } from '@app/shared';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 import { HeaderComponent, FooterComponent } from './components';
 import { MainComponent } from './main.component';
@@ -30,6 +31,7 @@ const CHILD_ROUTES: Routes = [{
         CommonModule,
         FormsModule,
         MaterialModule,
+        NgxExtendedPdfViewerModule,
         RouterModule.forChild(CHILD_ROUTES)
     ],
     entryComponents: [ HeaderComponent, FooterComponent ],
